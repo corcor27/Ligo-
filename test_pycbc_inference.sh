@@ -9,7 +9,11 @@ PAR=${NAMEDIR}/parameters.txt
 TRIGGER_TIME=1126259462.0
 INJ_APPROX=IMRPhenomPv2threePointFivePN
 MASS1=20.
+<<<<<<< HEAD
 MASS2=5.
+=======
+MASS2=20.
+>>>>>>> 0259945bfa6f310b521f86b214d1fa6313dc8cd9
 RA=2.21535724066
 DEC=-1.23649695537
 THETA_JN=2.7  ### <<---- this parameter is no longer relevant
@@ -22,8 +26,8 @@ INJ_F_MIN=20.
 TAPER="start"
 
 # Spin parameters
-MIN_SPIN1=0.75
-MAX_SPIN1=0.75
+MIN_SPIN1=0.0
+MAX_SPIN1=0.0
 MIN_KAPPA1=0.0
 MAX_KAPPA1=0.0
 MIN_SPIN2=0.0
