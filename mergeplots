@@ -1,7 +1,7 @@
 import Image
 
-background = Image.open("m1.png")
-overlay = Image.open("mass1.png")
+background = Image.open("mass1.png")
+overlay = Image.open("m1.png")
 
 background = background.convert("RGBA")
 overlay = overlay.convert("RGBA")
