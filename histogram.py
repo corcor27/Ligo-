@@ -28,4 +28,4 @@ plt.hist(m1,50)
 plt.xlabel('m1')
 plt.ylabel('frequency')
 
-plt.savefig("Run32_sample_mass1.png")
+plt.savefig("Run32_test_mass1.png")
