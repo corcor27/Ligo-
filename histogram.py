@@ -27,4 +27,5 @@ for line in f:
 plt.hist(m1,50)
 plt.xlabel('m1')
 plt.ylabel('frequency')
+plt.savefig("sample_mass1.png" % savename)
 © 2017 GitHub, Inc.
