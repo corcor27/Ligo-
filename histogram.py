@@ -14,7 +14,7 @@ test=(1,2.3,3,4,5,6,6,7,7,88,9,)
 #m1=24th index
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
-f = open('test.txt', 'r')
+f = open('run32_samples.txt', 'r')
     
     #create empty list to store numerics of interest
 data = []
