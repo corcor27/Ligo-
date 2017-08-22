@@ -29,11 +29,11 @@ m2_freq =[x[31] for x in data ]
 #    chi_p = [x[46] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
-plt.hist(m2_freq,100, normed=True)
+plt.hist(m2_freq,50, normed=True)
 plt.xlabel('m2')
 plt.ylabel('probability density')
-plt.axis([5, 15, 0, 0.90])
-plt.savefig("Run32_attempt4_mass2.png")
+plt.axis([5, 15, 0, 1.0])
+plt.savefig("Run32_attempt5_mass2.png")
 #plt.figure(2)
 #plt.hist(m2_freq,50, normed=True)
 #plt.xlabel('m2')
