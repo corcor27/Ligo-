@@ -8,7 +8,7 @@ test=(1,2.3,3,4,5,6,6,7,7,88,9,)
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 g= open('parameters.txt', 'r')
 
-f = open('test.txt', 'r')
+f = open('run32samples.txt', 'r')
 
     
     #create empty list to store numerics of interest
