@@ -1,7 +1,7 @@
 import Image
 
-background = Image.open ("Run32_attempt6_mass2.png")
-overlay = Image.open ("run32_mass2_attempt1.png")
+background = Image.open ("Run32_attempt3_chi_p.png")
+overlay = Image.open ("run32_attempt_chi_p.png")
 
 background = background.convert("RGBA")
 overlay = overlay.convert("RGBA")
