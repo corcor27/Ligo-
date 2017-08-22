@@ -25,14 +25,14 @@ for line in f:
     data.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
-m2_freq =[x[31] for x in data ]
-#    chi_p = [x[46] for x in data ]
+#    m2_freq =[x[31] for x in data ]
+chi_p = [x[49] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
-plt.hist(m2_freq,50, normed=True)
-plt.xlabel('m2')
+plt.hist(chi_p,50, normed=True)
+plt.xlabel('chi_p')
 plt.ylabel('probability density')
-plt.axis([7, 13, 0, 1.0])
+plt.axis([0.3, 0.9, 0, 8.0])
 plt.savefig("Run32_attempt6_mass2.png")
 #plt.figure(2)
 #plt.hist(m2_freq,50, normed=True)
