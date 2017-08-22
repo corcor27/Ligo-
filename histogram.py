@@ -29,7 +29,7 @@ for line in f:
 chi_p = [x[47] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
-plt.hist(chi_p,50, normed=True)
+plt.hist(chi_p,50, facecolor='green', normed=True)
 plt.xlabel('chi_p')
 plt.ylabel('probability density')
 plt.axis([0.3, 0.9, 0, 8.0])
