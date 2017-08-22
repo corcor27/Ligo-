@@ -24,7 +24,7 @@ data = []
 for line in f:
     data.append([float(x) for x in line.split()])
 #add parameters as required
-     m1_freq= [ x[24] for x in data]
+m1_freq= [ x[24] for x in data]
 #    m2_freq =[x[27] for x in data ]
 #    chi_p = [x[46] for x in data ]
 #    chi_eff = [x[46] for x in data ]
