@@ -32,7 +32,7 @@ m1_freq= [ x[28] for x in data]
 plt.hist(m1_freq,100, normed=True)
 plt.xlabel('m1')
 plt.ylabel('probability density')
-plt.axis([70, 95, 0, 0.30])
+plt.axis([70, 95, 0, 0.40])
 plt.savefig("Run32_attempt8_mass1.png")
 #plt.figure(2)
 #plt.hist(m2_freq,50, normed=True)
