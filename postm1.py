@@ -180,7 +180,7 @@ def plotPosterior(parameter):
    plt.axvline(x=mean_val,linewidth=2, color='k')
    plt.axvline(x=upper_90,linewidth=2,linestyle='dashed',color='k')
    plt.xlabel("%s" % parameter)
-   plt.axis([70, 95, 0, 0.30])
+   plt.axis([70, 95, 0, 0.40])
    plt.grid()
    # Removed the priors, add them if you fancy
    ## Plot priors for derived spin parameters
