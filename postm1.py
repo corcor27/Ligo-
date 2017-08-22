@@ -204,4 +204,3 @@ else:
   plotPosterior(whatdo)
 
 print "DONE"
-© 2017 GitHub, Inc.
