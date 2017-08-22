@@ -29,7 +29,7 @@ m2_freq =[x[31] for x in data ]
 #    chi_p = [x[46] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
-plt.hist(m1_freq,100, normed=True)
+plt.hist(m2_freq,100, normed=True)
 plt.xlabel('m2')
 plt.ylabel('probability density')
 plt.axis([0, 20, 0, 0.40])
