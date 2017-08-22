@@ -1,10 +1,10 @@
 import Image
 
-background = Image.open ("Run32_attempt8_mass1.png")
-overlay = Image.open ("run32_mass1_attempt2.png")
+background = Image.open ("Run32_attempt9_mass1.png")
+overlay = Image.open ("run32_mass1_attempt3.png")
 
 background = background.convert("RGBA")
 overlay = overlay.convert("RGBA")
 
 new_img = Image.blend(background, overlay, 0.5)
-new_img.save("Run32overlay.png","PNG")
+new_img.save("Run32_aoverlay.png","PNG")
