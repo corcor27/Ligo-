@@ -39,7 +39,7 @@ plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=0.5,linewidth=2, color='r')
 plt.axis([0, 1, 0, 8.0])
 plt.ylabel('probability density')
-plt.savefig("Run32_chi_p_plot_mark2.png")
+plt.savefig("Run22_chi_p_lal.png")
 
 
 
