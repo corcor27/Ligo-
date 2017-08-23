@@ -23,19 +23,22 @@ chi_p = [x[47] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
 
+pycbc_data= np.loadtxt('run32_chi_p.txt')
 
-upper_90=np.percentile(chi_p, 95)
-mean_val=np.average(chi_p)
-lower_90=np.percentile(chi_p, 5)
-
+Lal_upper_90=np.percentile(chi_p, 95)
+Lal_lower_90=np.percentile(chi_p, 5)
+pycbc_upper_90=np.percentile(pycbc_data, 95)
+pycbc_lower_90=np.percentile(pycbc_data, 5)
 plt.hist(chi_p,50, facecolor='green', normed=True)
+plt.hist(pycbc_data,50, normed=True, color='b')
 plt.xlabel('chi_p')
-plt.axvline(x=lower_90,linewidth=2,linestyle='dashed',color='m')
+plt.axvline(x=Lal_lower_90,linewidth=2,linestyle='dashed',color='m')
+plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
+plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
+plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=0.75,linewidth=2, color='r')
-plt.axvline(x=upper_90,linewidth=2,linestyle='dashed',color='m')
 plt.ylabel('probability density')
-plt.axis([0.3, 0.9, 0, 8.0])
-plt.savefig("Run32_attempt9_chi_p.png")
+plt.savefig("Run32_chi_p_plot.png")
 
 
 
