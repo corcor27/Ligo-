@@ -14,15 +14,15 @@ for line in g:
 g.close()
 
 
-f = open('test.txt', 'r')
+f = open('run32samples.txt'', 'r')
 lal_data = []
 
 for line in f:
     lal_data.append([float(x) for x in line.split()])
 #add parameters as required
-m1_freq= [ x[28] for x in lal_data]
-m2_freq =[x[31] for x in lal_data ]
-chi_p = [x[45] for x in lal_data ]
+m1_freq= [ x[25] for x in lal_data]
+#m2_freq =[x[31] for x in lal_data ]
+#chi_p = [x[45] for x in lal_data ]
 f.close()    
     #create empty list to store numerics of interest
 
@@ -36,7 +36,7 @@ f.close()
     #loop over all lines the file and add each column to the list as a tuple
     
 
-pycbc_data= np.loadtxt('pycbc_test.txt')
+pycbc_data= np.loadtxt('run32_mass1.txt')
 
 #for line in h :
 #    pycbc_data.append(line.split( ))
@@ -58,8 +58,8 @@ plt.hist(pycbc_data,50, normed=True, color='w')
 plt.hist(m1_freq,50, normed=True, color='r')
 plt.xlabel('m1')
 plt.ylabel('probability density')
-
-
+plt.savefig("Run32_m1_plot.png")
+plt.axvline(x=80,linewidth=2, color='r')
 
 """
 plt.figure(2)
