@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-g = open('run22sample.txt', 'r')
+g = open('run35_samples.txt', 'r')
 
     
     #create empty list to store numerics of interest
