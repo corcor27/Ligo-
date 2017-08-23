@@ -19,7 +19,7 @@ for line in g:
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
-chi_p = [x[47] for x in data ]
+chi_p = [x[50] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
 
