@@ -61,7 +61,7 @@ plt.ylabel('probability density')
 
 
 
-
+"""
 plt.figure(2)
 plt.hist(m2_freq,50, normed=True)
 plt.xlabel('m2')
@@ -70,3 +70,4 @@ plt.figure(3)
 plt.hist(chi_p,50, normed=True)
 plt.xlabel(r'$\chi_p$')
 plt.ylabel('probability density')
+"""
