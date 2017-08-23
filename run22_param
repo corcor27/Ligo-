@@ -70,7 +70,8 @@ t0
 chi_eff	
 q	
 mtotal_source	
-h1_end_time	tilt1	
+h1_end_time	
+tilt1	
 lal_approximant	
 h1_optimal_snr	
 azimuth	
