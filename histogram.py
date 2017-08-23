@@ -36,7 +36,7 @@ mean_val=np.average(chi_p)
 
 plt.hist(chi_p,50, facecolor='green', normed=True)
 plt.xlabel('chi_p')
-plt.axvline(x=lower_90,linewidth=2,linestyle='dashed',color='k')
+
 plt.axvline(x=mean_val,linewidth=2, color='k')
 plt.axvline(x=upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.ylabel('probability density')
