@@ -4,7 +4,8 @@ theta1
 costheta_jn	
 redshift	
 v1_end_time	
-f_ref	costilt2	
+f_ref	
+costilt2	
 psdscaleflag	
 phi_jl	
 l1_optimal_snr	
