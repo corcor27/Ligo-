@@ -179,7 +179,7 @@ def plotPosterior(parameter):
    plt.axvline(x=lower_90,linewidth=2,linestyle='dashed',color='k')
    plt.axvline(x=80,linewidth=2, color='r')
    plt.axvline(x=upper_90,linewidth=2,linestyle='dashed',color='k')
-   plt.axis([65, 95, 0, 1])
+   plt.axis([65, 95, 0, 0.4])
    plt.xlabel("%s" % parameter)
    plt.grid()
    # Removed the priors, add them if you fancy
