@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-g = open('run35_samples.txt', 'r')
+g = open('run32samples.txt', 'r')
 
     
     #create empty list to store numerics of interest
@@ -39,7 +39,7 @@ plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 plt.axvline(x=0.25,linewidth=2, color='r')
 plt.axis([0, 1, 0, 8.0])
 plt.ylabel('probability density')
-plt.savefig("Run35_chi_p_lal_2.png")
+plt.savefig("Run32_chi_p_lal.png")
 
 
 
