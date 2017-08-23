@@ -7,7 +7,6 @@ test=(1,2.3,3,4,5,6,6,7,7,88,9,)
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-
 g = open('run32samples.txt', 'r')
 
     
