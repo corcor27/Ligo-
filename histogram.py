@@ -30,8 +30,8 @@ chi_p = [x[47] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
 
-lower_90=np.percentile(chi_p, 90)
-upper_90=np.percentile(chi_p, 10)
+lower_90=np.percentile(chi_p, 10)
+upper_90=np.percentile(chi_p, 90)
 mean_val=np.average(chi_p)
 
 plt.hist(chi_p,50, facecolor='green', normed=True)
