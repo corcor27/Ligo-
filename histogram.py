@@ -31,17 +31,18 @@ chi_p = [x[47] for x in data ]
 #plt.figure(1)
 
 
-upper_90=np.percentile(chi_p, 90)
+upper_90=np.percentile(chi_p, 95)
 mean_val=np.average(chi_p)
+lower_90=np.percentile(chi_p, 5)
 
 plt.hist(chi_p,50, facecolor='green', normed=True)
 plt.xlabel('chi_p')
-
+plt.axvline(x=lower_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=mean_val,linewidth=2, color='k')
 plt.axvline(x=upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.ylabel('probability density')
 plt.axis([0.3, 0.9, 0, 8.0])
-plt.savefig("Run32_attempt7_chi_p.png")
+plt.savefig("Run32_attempt8_chi_p.png")
 #plt.figure(2)
 #plt.hist(m2_freq,50, normed=True)
 #plt.xlabel('m2')
