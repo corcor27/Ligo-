@@ -19,7 +19,7 @@ for line in g:
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
-chi_p = [x[28] for x in data ]
+chi_p = [x[31] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
 
@@ -36,10 +36,10 @@ plt.axvline(x=Lal_lower_90,linewidth=2,linestyle='dashed',color='m')
 plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
-plt.axvline(x=0.5,linewidth=2, color='r')
-plt.axis([65, 95, 0, 8.0])
+plt.axvline(x=10,linewidth=2, color='r')
+plt.axis([0, 20, 0, 8.0])
 plt.ylabel('probability density')
-plt.savefig("Run32_m1_lal.png")
+plt.savefig("Run32_m2_lal.png")
 
 
 
