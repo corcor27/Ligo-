@@ -1,6 +1,6 @@
 import Image
 
-background = Image.open ("Run32_chi_p_lal.png")
+background = Image.open ("Run32_m1_lal_2.png")
 overlay = Image.open ("run32_chi_p_pycbc.png")
 
 background = background.convert("RGBA")
