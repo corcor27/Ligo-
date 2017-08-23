@@ -8,7 +8,7 @@ test=(1,2.3,3,4,5,6,6,7,7,88,9,)
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
 
-f = open('run32samples.txt', 'r')
+g = open('run32samples.txt', 'r')
 
     
     #create empty list to store numerics of interest
@@ -21,7 +21,7 @@ data = []
 #print parameters    
     #loop over all lines the file and add each column to the list as a tuple
 
-for line in f:
+for line in g:
     data.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
