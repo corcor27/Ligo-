@@ -1,10 +1,10 @@
 import Image
 
-background = Image.open ("Run35_chi_p_lal_2.png")
-overlay = Image.open ("run35_chi_p.png")
+background = Image.open ("Run32_chi_p_lal.png")
+overlay = Image.open ("run32_chi_p_pycbc.png")
 
 background = background.convert("RGBA")
 overlay = overlay.convert("RGBA")
 
 new_img = Image.blend(background, overlay, 0.5)
-new_img.save("Run35_chi_p.png","PNG")
+new_img.save("Run32_chi_p_over.png","PNG")
