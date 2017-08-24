@@ -52,4 +52,19 @@ a2
 af	
 chi_p	
 optimal_snr	
-phase	alpha	a1z	m1_source	distance	mf	l_peak	mc	l1_cplx_snr_amp	h1v1_delay	logprior	theta_jn	flow	l1_cplx_snr_arg	t0	chi_eff	q	mtotal_source	h1_end_time	tilt1	lal_approximant	h1_optimal_snr	azimuth	lal_amporder	dec	matched_filter_snr
+phase	
+alpha	
+a1z	
+m1_source	
+distance	
+mf	
+l_peak	
+mc	
+l1_cplx_snr_amp	
+h1v1_delay	
+logprior	
+theta_jn	
+flow	
+l1_cplx_snr_arg	
+t0	
+chi_eff	q	mtotal_source	h1_end_time	tilt1	lal_approximant	h1_optimal_snr	azimuth	lal_amporder	dec	matched_filter_snr
