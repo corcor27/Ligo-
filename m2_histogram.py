@@ -37,9 +37,9 @@ plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=10,linewidth=2, color='r')
-plt.axis([5, 15, 0, 0.8])
+plt.axis([6, 14, 0, 1])
 plt.ylabel('probability density')
-plt.savefig("Run32_m2_lal4.png")
+plt.savefig("Run32_m2_lal5.png")
 
 
 
