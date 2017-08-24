@@ -1,10 +1,10 @@
 import Image
 
-background = Image.open ("Run32_chi_eff_lal4.png")
-overlay = Image.open ("run32_chi_eff.png")
+background = Image.open ("Run32_mc_lal.png")
+overlay = Image.open ("run32_mc.png")
 
 background = background.convert("RGBA")
 overlay = overlay.convert("RGBA")
 
 new_img = Image.blend(background, overlay, 0.5)
-new_img.save("Run32_chi_eff_merge.png","PNG")
+new_img.save("Run32_mc_merge.png","PNG")
