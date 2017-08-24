@@ -39,7 +39,7 @@ plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 plt.axvline(x=90,linewidth=2, color='r')
 plt.axis([70, 110, 0, 10])
 plt.ylabel('probability density')
-plt.savefig("Run32_chi_eff_lal4.png")
+plt.savefig("Run32_total_m_lal.png")
 
 
 
