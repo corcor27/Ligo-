@@ -177,7 +177,7 @@ def plotPosterior(parameter):
    plt.title("%d data points" % (values))
    plt.hist(parameter_values,50, normed=True, alpha=0.9)
    plt.axvline(x=lower_90,linewidth=2,linestyle='dashed',color='k')
-   plt.axvline(x=10,linewidth=2, color='r')
+   plt.axvline(x=0.44,linewidth=2, color='r')
    plt.axvline(x=upper_90,linewidth=2,linestyle='dashed',color='k')
    plt.axis([0.3, 0.6, 0, 25])
    plt.xlabel("%s" % parameter)
