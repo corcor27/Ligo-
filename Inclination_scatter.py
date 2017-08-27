@@ -6,9 +6,12 @@ I = [90.0, 60.0, 45.0, 30.0, 22.5]
 ae = [48.30, 36.24, 23.48, 28.46, 67.66]
 be = [0.0, 7.78, 15.9, 23.36, 18.88]
 ce = [47.74, 15.38, 28.48, 0.0, 22.86]
-plt.errorbar(x=I, y=a, yerr=ae, fmt='o', color='g')
+#plt.errorbar(x=I, y=a, yerr=ae, fmt='o', color='g')
 #plt.errorbar(x=I, y=b, yerr=be, fmt='>', color='b')
 #plt.errorbar(x=I, y=c, yerr=ce, fmt='x', color='r')
+plt.plot(x=I, y=a, linewidth=2,linestyle='dashed',color='g')
+plt.plot(x=I, y=b, linewidth=2,linestyle='dashed',color='b')
+plt.plot(x=I, y=c, linewidth=2,linestyle='dashed',color='r')
 plt.xlabel('Inclination (degrees)')
 plt.ylabel('Percentage error')
 plt.axis([20, 100, -80, 100])
