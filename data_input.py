@@ -5,7 +5,7 @@ import numpy as np
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-g = open('run91_data.txt', 'r')
+g = open('run92_data.txt', 'r')
 
     
     #create empty list to store numerics of interest
