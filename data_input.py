@@ -25,6 +25,6 @@ chi_p = [x[52] for x in data ]
 
 
 Lal_upper_90=np.percentile(chi_p, 95)
-Lal_lower_90=np.percentile(chi_p, 5)
+
 mean_val=np.average(chi_p)
-print(Lal_upper_90,Lal_lower_90,mean_val
+print(Lal_upper_90,mean_val)
