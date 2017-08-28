@@ -15,6 +15,6 @@ plt.plot(I, c, linewidth=2,linestyle='dashed',color='r', label = 'M90_q8_spin1x=
 plt.xlabel('Inclination (degrees)')
 plt.ylabel('Percentage error')
 plt.title("Estimation of chi_p with varying inclination")
-plt.axis([20, 100, 0, 80])
+plt.axis([-10, 70, 0, 80])
 plt.legend(loc='upper left', fontsize=10.5)
 plt.savefig("Inc_line5.png")
