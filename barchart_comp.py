@@ -43,7 +43,7 @@ rects2 = ax.bar(ind + width, pycbc_v, width, color='b', yerr=pycbc_e, label = 'P
 
 # add some text for labels, title and axes ticks
 ax.set_ylabel('Percentage Error')
-ax.set_title('Lal v Pycbc-Run2')
+ax.set_title('Lal v Pycbc-Run3')
 ax.set_xticks(ind + width / 2)
 ax.set_xticklabels(('m1', 'm2', 'chi_p', 'chi_eff', 'Mc','q', 'spin1'))
 plt.ylim((0,180))
