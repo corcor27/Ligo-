@@ -26,3 +26,4 @@ layout = go.Layout(
 )
 fig = go.Figure(data=data, layout=layout)
 py.iplot(fig, filename='error-bar-bar')
+plt.savefig("Run14_test")
