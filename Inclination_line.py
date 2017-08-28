@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
-a = [24.84, 6.10, 3.92, 2.74,3.48]
-b = [18.22, 57.68, 9.78, 3.34, 5.26]
-c = [30.12, 77.34, 0.5, 1.94, 2.36]
-I = [0.0, 60.0, 45.0, 30.0, 22.5]
-ae = [48.30, 36.24, 23.48, 28.46, 67.66]
-be = [51.72, 7.78, 15.9, 23.36, 18.88]
-ce = [47.74, 15.38, 28.48, 26.7, 22.86]
+a = [6.10, 3.92, 2.74,3.48, 24.84]
+b = [57.68, 9.78, 3.34, 5.26, 18.22]
+c = [77.34, 0.5, 1.94, 2.36, 30.12]
+I = [60.0, 45.0, 30.0, 22.5, 0.0]
+ae = [36.24, 23.48, 28.46, 67.66, 48.30]
+be = [7.78, 15.9, 23.36, 18.88, 51.72]
+ce = [15.38, 28.48, 26.7, 22.86, 47.74]
 #plt.errorbar(x=I, y=a, yerr=0, fmt='o', color='g')
 #plt.errorbar(x=I, y=b, yerr=0, fmt='>', color='b')
 #plt.errorbar(x=I, y=c, yerr=0, fmt='x', color='r')
@@ -17,4 +17,4 @@ plt.ylabel('Percentage error')
 plt.title("Estimation of chi_p with varying inclination")
 plt.axis([-10, 70, 0, 80])
 plt.legend(loc='upper left', fontsize=10.5)
-plt.savefig("Inc_line6.png")
+plt.savefig("Inc_line7.png")
