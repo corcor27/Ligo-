@@ -3,12 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 pram =['m1', 'm2', 'chi_p', 'chi_eff', 'Mc','q', 'spin1']
+N=7
 
 ind = np.arange(N)  # the x locations for the groups
 width = 0.35       # the width of the bars
   
 
-N=7
+
 lal_v=(8.322, 16.185, 5.2, 5.607, 29.673, 28.070, 50)
 
 lal_e= (2.06, 33.83, 42, 29.673, 10.837, 58.596, 82.8)
