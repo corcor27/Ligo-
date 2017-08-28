@@ -31,6 +31,6 @@ ax.set_ylabel('Percentage Error')
 ax.set_title('Lal v Pycbc')
 ax.set_xticks(ind + width / 2)
 ax.set_xticklabels(('m1', 'm2', 'chi_p', 'chi_eff', 'Mc','q', 'spin1'))
-axis([1, 7, 0, 150])
+plt.ylim((0,150))
 
-plt.savefig("comp_test.png")
+plt.savefig("comp_test1.png")
