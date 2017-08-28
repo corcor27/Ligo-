@@ -48,4 +48,4 @@ i_m=np.average(spin2_i)
 
 
 
-print(a_u,a_m,b_u,b_m,c_u,c_m,d_u,d_m,e_u,e_m,f_u,f_m,g_u,g_m)
+print(a_u,a_m,b_u,b_m,c_u,c_m,d_u,d_m,e_u,e_m,f_u,f_m,g_u,g_m,h_u,h_m,i_u,i_m)
