@@ -24,7 +24,8 @@ chi_eff_d = [x[69] for x in data ]
 mc_e = [x[61] for x in data ]
 dis_f = [x[58] for x in data ]
 ratio_g = [x[70] for x in data ]
-
+spin1_h = [x[48] for x in data ]
+spin2_i = [x[50] for x in data ]
 #plt.figure(1)
 a_u=np.percentile(m1_a, 95)
 a_m=np.average(m1_a)
@@ -40,6 +41,11 @@ f_u=np.percentile(dis_f, 95)
 f_m=np.average(dis_f)
 g_u=np.percentile(ratio_g, 95)
 g_m=np.average(ratio_g)
+h_u=np.percentile(spin1_h, 95)
+h_m=np.average(spin1_h)
+i_u=np.percentile(spin2_i, 95)
+i_m=np.average(spin2_i)
+
 
 
 print(a_u,a_m,b_u,b_m,c_u,c_m,d_u,d_m,e_u,e_m,f_u,f_m,g_u,g_m)
