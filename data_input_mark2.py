@@ -5,7 +5,7 @@ import numpy as np
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-g = open('run88_data.txt', 'r')
+g = open('run22sample.txt', 'r')
 
     
     #create empty list to store numerics of interest
@@ -20,10 +20,10 @@ for line in g:
 m1_a= [ x[28] for x in data]
 m2_b =[x[31] for x in data ]
 chi_p_c = [x[52] for x in data ]
-chi_eff_d = [x[46] for x in data ]
-mc_e = [x[46] for x in data ]
-dis_f = [x[46] for x in data ]
-ratio_g = [x[46] for x in data ]
+chi_eff_d = [x[69] for x in data ]
+mc_e = [x[61] for x in data ]
+dis_f = [x[58] for x in data ]
+ratio_g = [x[70] for x in data ]
 
 #plt.figure(1)
 a_u=np.percentile(m1_a, 95)
@@ -34,12 +34,12 @@ c_u=np.percentile(chi_p_c, 95)
 c_m=np.average(chi_p_c)
 d_u=np.percentile(chi_eff_d, 95)
 d_m=np.average(chi_eff_d)
-e_u=np.percentile(chi_p_c, 95)
-e_m=np.average(chi_p_c)
-f_u=np.percentile(chi_eff_d, 95)
-f_m=np.average(chi_eff_d)
+e_u=np.percentile(mc_e, 95)
+e_m=np.average(mc_e)
+f_u=np.percentile(dis_f, 95)
+f_m=np.average(dis_f)
+g_u=np.percentile(ratio_g, 95)
+g_m=np.average(ratio_g)
 
-a1 = 
 
-
-print(Lal_upper_90,mean_val)
+print(a_u,a_m,b_u,b_m,c_u,c_m,d_u,d_m,e_u,e_m,f_u,f_m,g_u,g_m)
