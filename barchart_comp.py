@@ -18,13 +18,13 @@ lal_e= (2.06, 33.83, 42, 29.673, 10.837, 58.596, 82.8)
 
 
 fig, ax = plt.subplots()
-rects1 = ax.bar(ind, lal_v, width, color='r', yerr=lal_e)
+rects1 = ax.bar(ind, lal_v, width, color='g', yerr=lal_e)
 
 pycbc_v = (10.29, 23.73, 73.2, 18.457, 6.855, 38.947, 55.6)
 pycbc_e = (2.00, 38.27, 54.6, 38.551, 11.751, 67.017, 79)  
 
 
-rects2 = ax.bar(ind + width, pycbc_v, width, color='r', yerr=pycbc_e)
+rects2 = ax.bar(ind + width, pycbc_v, width, color='b', yerr=pycbc_e)
 
 # add some text for labels, title and axes ticks
 ax.set_ylabel('Percentage Error')
