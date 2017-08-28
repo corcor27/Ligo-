@@ -7,6 +7,7 @@ import cPickle as pickle
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
+
 g = open('run22sample.txt', 'r')
 
     
@@ -19,15 +20,15 @@ data = []
 for line in g:
     data.append([float(x) for x in line.split()])
 #add parameters as required
-m1_a= [ x[28] for x in data]
-m2_b =[x[31] for x in data ]
-chi_p_c = [x[52] for x in data ]
-chi_eff_d = [x[69] for x in data ]
-mc_e = [x[61] for x in data ]
-dis_f = [x[58] for x in data ]
-ratio_g = [x[70] for x in data ]
-spin1_h = [x[48] for x in data ]
-spin2_i = [x[50] for x in data ]
+m1_a= np.loadtxt('mass1.txt')
+m2_b =np.loadtxt('mass2.txt')
+chi_p_c = np.loadtxt('chi_p.txt')
+chi_eff_d = np.loadtxt('chi_eff.txt')
+mc_e = np.loadtxt('mchirp.txt')
+dis_f = np.loadtxt('distance.txt')
+ratio_g = np.loadtxt('q.txt')
+spin1_h = np.loadtxt('spin1_a.txt')
+spin2_i = np.loadtxt('spin2_a.txt')
 #plt.figure(1)
 a_u=np.percentile(m1_a, 95)
 a_m=np.average(m1_a)
