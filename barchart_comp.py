@@ -32,8 +32,7 @@ ax.set_title('Lal v Pycbc')
 ax.set_xticks(ind + width / 2)
 ax.set_xticklabels(('m1', 'm2', 'chi_p', 'chi_eff', 'Mc','q', 'spin1'))
 
-autolabel(rects1)
-autolabel(rects2)
+
 
 ax.legend('Lal', 'Pycbc')
 plt.savefig("comp_test.png")
