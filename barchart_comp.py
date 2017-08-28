@@ -32,5 +32,5 @@ ax.set_title('Lal v Pycbc')
 ax.set_xticks(ind + width / 2)
 ax.set_xticklabels(('m1', 'm2', 'chi_p', 'chi_eff', 'Mc','q', 'spin1'))
 plt.ylim((0,150))
-
-plt.savefig("comp_test2.png")
+plt.legend(loc='upper left', fontsize=10.5)
+plt.savefig("comp_test3.png")
