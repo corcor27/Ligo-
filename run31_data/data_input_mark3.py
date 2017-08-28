@@ -4,22 +4,6 @@ import matplotlib.pyplot as plt
 import cPickle as pickle
 
 
-#open file from which we want to read data
-#for this to work, we must have our python file saved in the same directory as the data file of interest
-
-
-g = open('run22sample.txt', 'r')
-
-    
-    #create empty list to store numerics of interest
-
-data = []
-
-
-
-for line in g:
-    data.append([float(x) for x in line.split()])
-#add parameters as required
 m1_a= np.loadtxt('mass1.txt')
 m2_b =np.loadtxt('mass2.txt')
 chi_p_c = np.loadtxt('chi_p.txt')
