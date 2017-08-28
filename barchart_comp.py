@@ -8,7 +8,7 @@ lal_e=[2.06, 33.83, 42, 29.673, 10.837, 58.596, 82.8]
 pycbc_v=[10.29, 23.73, 73.2, 18.457, 6.855, 38.947, 55.6]
 pycbc_e=[2.00, 38.27, 54.6, 38.551, 11.751, 67.017, 79]       
 
-N=6
+N=8
 ind = np.arange(N)    # the x locations for the groups
 width = 0.4
 fig, ax = plt.subplots()
