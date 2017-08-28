@@ -33,6 +33,4 @@ ax.set_xticks(ind + width / 2)
 ax.set_xticklabels(('m1', 'm2', 'chi_p', 'chi_eff', 'Mc','q', 'spin1'))
 
 
-
-ax.legend('Lal', 'Pycbc')
 plt.savefig("comp_test.png")
