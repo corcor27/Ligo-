@@ -1,10 +1,10 @@
 import Image
 
-background = Image.open ("Run32_q_lal2.png")
-overlay = Image.open ("run32_q.png")
+background = Image.open ("Run32_spin1_lal.png")
+overlay = Image.open ("run32_s1_pycbc.png")
 
 background = background.convert("RGBA")
 overlay = overlay.convert("RGBA")
 
 new_img = Image.blend(background, overlay, 0.5)
-new_img.save("Run32_q_merge.png","PNG")
+new_img.save("Run32_s1_merge.png","PNG")
