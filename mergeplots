@@ -2,9 +2,11 @@ import Image
 
 background = Image.open ("Inclination-merge4.png")
 overlay = Image.open ("Run98-chi_p-lal.png")
+top = Image.open ("Run98-chi_p-lal.png")
 
 background = background.convert("RGBA")
 overlay = overlay.convert("RGBA")
+top = = overlay.convert("RGBA")
 
-new_img = Image.blend(background, overlay, 0.5)
+new_img = Image.blend(background, overlay, top, 0.5)
 new_img.save("Inclination-merge5.png","PNG")
