@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
-
+g = open('run32samples.txt', 'r')
+data = []
 g = open('run32samples.txt', 'r')
 data = []
 a = open('run89_data.txt', 'r')
@@ -15,15 +16,14 @@ c = open('run95_data.txt', 'r')
 data3 = []
 d = open('run98_data.txt', 'r')
 data4 = []
-def 
-g = open('run32samples.txt', 'r')
-data = []
-    for line in g:
+
+
+for line in g:
     data.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
-    chi_p = [x[52] for x in data ]
+chi_p = [x[52] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
 return chi_p
