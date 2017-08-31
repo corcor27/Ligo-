@@ -9,4 +9,4 @@ overlay = overlay.convert("RGBA")
 top = = overlay.convert("RGBA")
 
 new_img = Image.blend(background, overlay, top, 0.5)
-new_img.save("Inclination-merge5.png","PNG")
+new_img.save("Inclination-merge6.png","PNG")
