@@ -72,7 +72,7 @@ plt.xlabel('chi_p')
 plt.axvline(x=0.5,linewidth=2, color='r')
 plt.axis([0, 1, 0,10 ])
 plt.ylabel('probability density')
-plt.savefig("mix-plot_lal.png")
+plt.savefig("mix-plot_lal7.png")
 
 
 
