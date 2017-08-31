@@ -28,25 +28,25 @@ chi_p = [x[52] for x in data ]
 #plt.figure(1)
 
 for line in a:
-    data.append([float(x) for x in line.split()])
+    data1.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
 chi_p1 = [x[52] for x in data ]
 for line in b:
-    data.append([float(x) for x in line.split()])
+    data2.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
 chi_p2 = [x[52] for x in data ]
 for line in c:
-    data.append([float(x) for x in line.split()])
+    data3.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
 chi_p3 = [x[52] for x in data ]
 for line in d:
-    data.append([float(x) for x in line.split()])
+    data4.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
