@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-g = open('run89_data.txt', 'r')
+g = open('run92_data.txt', 'r')
 
     
     #create empty list to store numerics of interest
@@ -39,7 +39,7 @@ plt.xlabel('chi_p')
 plt.axvline(x=0.5,linewidth=2, color='r')
 plt.axis([0, 1, 0,10 ])
 plt.ylabel('probability density')
-plt.savefig("Run89-chi_p-lal4.png")
+plt.savefig("Run92-chi_p-lal.png")
 
 
 
