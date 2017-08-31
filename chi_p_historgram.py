@@ -37,9 +37,9 @@ plt.xlabel('chi_p')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=0.5,linewidth=2, color='r')
-plt.axis([0, 1, 0,8 ])
+plt.axis([0, 1, 0,10 ])
 plt.ylabel('probability density')
-plt.savefig("Run89-chi_p-lal.png")
+plt.savefig("Run89-chi_p-lal2.png")
 
 
 
