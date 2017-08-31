@@ -69,7 +69,7 @@ plt.xlabel('chi_p')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=0.0.5,linewidth=2, color='r')
-plt.axis([0.1, 0.17, 0,70 ])
+plt.axis([0, 1, 0,8 ])
 plt.ylabel('probability density')
 plt.savefig("mix-plot_lal.png")
 
