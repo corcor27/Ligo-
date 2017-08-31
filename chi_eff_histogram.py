@@ -26,26 +26,26 @@ for line in g:
 chi_p = [x[52] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
-for line in g:
-    data.append([float(x) for x in line.split()])
+for line in a:
+    data1.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
 chi_p1 = [x[52] for x in data ]
-for line in g:
-    data.append([float(x) for x in line.split()])
+for line in b:
+    data2.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
 chi_p2 = [x[52] for x in data ]
-for line in g:
-    data.append([float(x) for x in line.split()])
+for line in c:
+    data3.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
 chi_p3 = [x[52] for x in data ]
-for line in g:
-    data.append([float(x) for x in line.split()])
+for line in d:
+    data4.append([float(x) for x in line.split()])
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
@@ -69,9 +69,9 @@ plt.xlabel('chi_p')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=0.5,linewidth=2, color='r')
-plt.axis([0, 1, 0,8 ])
+plt.axis([0, 1, 0,10 ])
 plt.ylabel('probability density')
-plt.savefig("mix-plot3_lal.png")
+plt.savefig("mix-plot4_lal.png")
 
 
 
