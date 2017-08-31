@@ -29,7 +29,7 @@ Lal_upper_90=np.percentile(chi_p, 95)
 Lal_lower_90=np.percentile(chi_p, 5)
 #pycbc_upper_90=np.percentile(pycbc_data, 95)
 #pycbc_lower_90=np.percentile(pycbc_data, 5)
-plt.hist(chi_p,50, facecolor='blue', normed=True)
+plt.hist(chi_p,50, facecolor='k', normed=True)
 #plt.hist(pycbc_data,50, normed=True, color='b')
 plt.xlabel('chi_p')
 #plt.axvline(x=Lal_lower_90,linewidth=2,linestyle='dashed',color='m')
@@ -39,7 +39,7 @@ plt.xlabel('chi_p')
 plt.axvline(x=0.5,linewidth=2, color='r')
 plt.axis([0, 1, 0,10 ])
 plt.ylabel('probability density')
-plt.savefig("Run92-chi_p-lal.png")
+plt.savefig("Run92-chi_p-lal2.png")
 
 
 
