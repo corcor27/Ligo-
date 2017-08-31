@@ -26,7 +26,7 @@ for line in g:
 chi_p = [x[52] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
-return chi_p
+
 for line in a:
     data.append([float(x) for x in line.split()])
 #add parameters as required
