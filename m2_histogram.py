@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-g = open('run87_data.txt', 'r')
+g = open('run88_data.txt', 'r')
 
     
     #create empty list to store numerics of interest
@@ -19,7 +19,7 @@ for line in g:
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
-chi_p = [x[52] for x in data ]
+chi_p = [x[62] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
 
@@ -29,18 +29,18 @@ Lal_upper_90=np.percentile(chi_p, 95)
 Lal_lower_90=np.percentile(chi_p, 5)
 #pycbc_upper_90=np.percentile(pycbc_data, 95)
 #pycbc_lower_90=np.percentile(pycbc_data, 5)
-plt.hist(chi_p,50, facecolor='green', normed=True, label = 'M70_q1/6_spin1x=0.5')
+plt.hist(chi_p,50, facecolor='green', normed=True, label = 'M80_q1/7_spin1x=0.5')
 #plt.hist(pycbc_data,50, normed=True, color='b')
 plt.xlabel('chi_p')
 plt.axvline(x=Lal_lower_90,linewidth=2,linestyle='dashed',color='m',label = '90% interval')
 plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
-plt.axvline(x=0.5,linewidth=2, color='r',label = 'Injected value')
-plt.axis([0.15, 0.9, 0, 5])
+plt.axvline(x=21.2,linewidth=2, color='r',label = 'Injected value')
+plt.axis([15, 45, 0, 0.25])
 plt.legend(loc='upper right', fontsize=10.5)
 plt.ylabel('probability density')
-plt.savefig("Run87-chip2.png")
+plt.savefig("Run88-chip.png")
 
 
 
