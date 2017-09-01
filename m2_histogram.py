@@ -31,7 +31,7 @@ Lal_lower_90=np.percentile(chi_p, 5)
 #pycbc_lower_90=np.percentile(pycbc_data, 5)
 plt.hist(chi_p,50, facecolor='green', normed=True, label = 'M80_q1/7_spin1x=0.5')
 #plt.hist(pycbc_data,50, normed=True, color='b')
-plt.xlabel('chi_p')
+plt.xlabel('Mc')
 plt.axvline(x=Lal_lower_90,linewidth=2,linestyle='dashed',color='m',label = '90% interval')
 plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
@@ -40,7 +40,7 @@ plt.axvline(x=21.2,linewidth=2, color='r',label = 'Injected value')
 plt.axis([15, 45, 0, 0.25])
 plt.legend(loc='upper right', fontsize=10.5)
 plt.ylabel('probability density')
-plt.savefig("Run88-chip.png")
+plt.savefig("Run88-mc.png")
 
 
 
