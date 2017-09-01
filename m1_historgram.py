@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #open file from which we want to read data
 #for this to work, we must have our python file saved in the same directory as the data file of interest
 
-g = open('run89_data.txt', 'r')
+g = open('run88_data.txt', 'r')
 
     
     #create empty list to store numerics of interest
@@ -29,7 +29,7 @@ Lal_upper_90=np.percentile(chi_p, 95)
 Lal_lower_90=np.percentile(chi_p, 5)
 #pycbc_upper_90=np.percentile(pycbc_data, 95)
 #pycbc_lower_90=np.percentile(pycbc_data, 5)
-plt.hist(chi_p,50, facecolor='green', normed=True, label = 'M90_q1/8_spin1x=0.5')
+plt.hist(chi_p,50, facecolor='green', normed=True, label = 'M80_q1/7_spin1x=0.5')
 #plt.hist(pycbc_data,50, normed=True, color='b')
 plt.xlabel('chi_p')
 plt.axvline(x=Lal_lower_90,linewidth=2,linestyle='dashed',color='m',label = '90% interval')
@@ -37,10 +37,10 @@ plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=0.5,linewidth=2, color='r',label = 'Injected value')
-plt.axis([0, 0.75, 0, 18])
+plt.axis([0, 1, 0, 6])
 plt.legend(loc='upper right', fontsize=10.5)
 plt.ylabel('probability density')
-plt.savefig("Run89-chip.png")
+plt.savefig("Run88-chip.png")
 
 
 
