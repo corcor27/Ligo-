@@ -19,7 +19,7 @@ for line in g:
 #add parameters as required
 #    m1_freq= [ x[28] for x in data]
 #    m2_freq =[x[31] for x in data ]
-chi_p = [x[61] for x in data ]
+chi_p = [x[52] for x in data ]
 #    chi_eff = [x[46] for x in data ]
 #plt.figure(1)
 
@@ -31,16 +31,16 @@ Lal_lower_90=np.percentile(chi_p, 5)
 #pycbc_lower_90=np.percentile(pycbc_data, 5)
 plt.hist(chi_p,50, facecolor='green', normed=True, label = 'M90_q1/8_spin1x=0.5')
 #plt.hist(pycbc_data,50, normed=True, color='b')
-plt.xlabel('mc')
+plt.xlabel('chi_p')
 plt.axvline(x=Lal_lower_90,linewidth=2,linestyle='dashed',color='m',label = '90% interval')
 plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
-plt.axvline(x=21.2,linewidth=2, color='r',label = 'Injected value')
-plt.axis([15, 30, 0, 0.8])
+plt.axvline(x=0.5,linewidth=2, color='r',label = 'Injected value')
+plt.axis([0, 0.75, 0, 18])
 plt.legend(loc='upper right', fontsize=10.5)
 plt.ylabel('probability density')
-plt.savefig("Run89-mc2.png")
+plt.savefig("Run89-chip.png")
 
 
 
