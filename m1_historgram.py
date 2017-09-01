@@ -40,7 +40,7 @@ plt.axvline(x=0.5,linewidth=2, color='r',label = 'Injected value')
 plt.axis([0, 1, 0, 6])
 plt.legend(loc='upper right', fontsize=10.5)
 plt.ylabel('probability density')
-plt.savefig("Run88-chip.png")
+plt.savefig("Run88-chip2.png")
 
 
 
