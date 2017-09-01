@@ -37,10 +37,10 @@ plt.axvline(x=Lal_upper_90,linewidth=2,linestyle='dashed',color='m')
 #plt.axvline(x=pycbc_lower_90,linewidth=2,linestyle='dashed',color='k')
 #plt.axvline(x=pycbc_upper_90,linewidth=2,linestyle='dashed',color='k')
 plt.axvline(x=0.5,linewidth=2, color='r',label = 'Injected value')
-plt.axis([17, 24, 0, 0.6])
+plt.axis([0.15, 0.9, 0, 5])
 plt.legend(loc='upper right', fontsize=10.5)
 plt.ylabel('probability density')
-plt.savefig("Run87-chip.png")
+plt.savefig("Run87-chip2.png")
 
 
 
