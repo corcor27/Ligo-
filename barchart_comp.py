@@ -11,10 +11,10 @@ width = 0.35       # the width of the bars
 
 #run14
 
-#lal_v=(8.322, 16.185, 5.2, 5.607, 29.673, 28.070, 2.59)
-#lal_e= (2.06, 33.83, 42, 29.673, 10.837, 58.596, 18.7)
-#pycbc_v = (10.29, 23.73, 73.2, 18.457, 6.855, 38.947, 1.03)
-#pycbc_e = (2.00, 38.27, 54.6, 38.551, 11.751, 67.017, 16.23)  
+lal_v=(8.322, 16.185, 5.2, 5.607, 29.673, 28.070, 2.59)
+lal_e= (2.06, 33.83, 42, 29.673, 10.837, 58.596, 18.7)
+pycbc_v = (10.29, 23.73, 73.2, 18.457, 6.855, 38.947, 1.03)
+pycbc_e = (2.00, 38.27, 54.6, 38.551, 11.751, 67.017, 16.23)  
 
 #run22
 
@@ -25,28 +25,28 @@ width = 0.35       # the width of the bars
 
 #run31
 
-lal_v=(1.105, 9.74, 8.8, 37, 4.85, 11.2, 0.714)
-lal_e= (6.43, 24.98, 84.8, 78.5, 12.35, 32, 32.857)
-pycbc_v = (2.805, 15.38, 84.4, 51.5, 7.19, 18.4, 2.14)
-pycbc_e = (3.712, 24.78, 77.2, 77.5, 10.70, 36, 11.19)  
+#lal_v=(1.105, 9.74, 8.8, 37, 4.85, 11.2, 0.714)
+#lal_e= (6.43, 24.98, 84.8, 78.5, 12.35, 32, 32.857)
+#pycbc_v = (2.805, 15.38, 84.4, 51.5, 7.19, 18.4, 2.14)
+#pycbc_e = (3.712, 24.78, 77.2, 77.5, 10.70, 36, 11.19)  
 
 
 
 
 fig, ax = plt.subplots()
-rects1 = ax.bar(ind, lal_v, width, color='g', yerr=lal_e, label = 'Lal inference')
+rects1 = ax.bar(ind, lal_v, width, color='g', yerr=lal_e, ecolor='m', label = 'Lal inference')
 
 
 
 
-rects2 = ax.bar(ind + width, pycbc_v, width, color='b', yerr=pycbc_e, label = 'Pycbc inference')
+rects2 = ax.bar(ind + width, pycbc_v, width, color='b', yerr=pycbc_e, ecolor='k', label = 'Pycbc inference')
 
 # add some text for labels, title and axes ticks
 ax.set_ylabel('Percentage Error')
 ax.set_title('Lal v Pycbc-RunD')
 ax.set_xticks(ind + width / 2)
 ax.set_xticklabels(('m1', 'm2', 'chi_p', 'chi_eff', 'Mc','q', 'spin1'))
-plt.ylim((0,200))
+plt.ylim((0,140))
 plt.xlabel('Parameters')
 plt.legend(loc='upper left', fontsize=10.5)
-plt.savefig("RunD_comparsions.png")
+plt.savefig("Run1-comparsion.png")
