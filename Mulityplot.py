@@ -29,8 +29,8 @@ def chi_p_1_90PE():
     mean_val_1=np.average(saved_chi_p_1)
     PE_1 = (abs(upper_90_1 - injected_value) / injected_value) * 100
     return PE_1
-
-print(chi_p_1_MPE,chi_p_1_90PE)
-
+run1MPE = chi_p_1_MPE()
+run1PE = chi_p_1_90PE()
+print(run1MPE,run1PE) 
    
 
