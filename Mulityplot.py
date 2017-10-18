@@ -8,10 +8,10 @@ print "Initialising..."
 
 injected_value=0.5
 
+g = open('run88_data.txt', 'r')
 
 def chi_p_1_MPE():
     data = []
-    g = open('run88_data.txt', 'r')
     for line in g:
         data.append([float(x) for x in line.split()])
     saved_chi_p_1 = [x[52] for x in data ]
@@ -21,7 +21,6 @@ def chi_p_1_MPE():
 
 def chi_p_1_90PE():
     data = []
-    g = open('run88_data.txt', 'r')
     for line in g:
         data.append([float(x) for x in line.split()])
     saved_chi_p_1 = [x[52] for x in data ]
