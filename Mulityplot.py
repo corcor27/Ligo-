@@ -22,7 +22,7 @@ def chi_p_1_MPE():
 
 def chi_p_1_90PE():
     data = []
-    g = open('run89_data.txt', 'r')
+    g = open('run88_data.txt', 'r')
     for line in g:
         data.append([float(x) for x in line.split()])
     saved_chi_p_1 = [x[52] for x in data ]
@@ -33,7 +33,7 @@ def chi_p_1_90PE():
 
 def chi_p_2_MPE():
     data = []
-    f = open('run88_data.txt', 'r')
+    f = open('run89_data.txt', 'r')
     for line in f:
         data.append([float(x) for x in line.split()])
     saved_chi_p_2 = [x[52] for x in data ]
