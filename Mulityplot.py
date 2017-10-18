@@ -7,11 +7,11 @@ import sys
 print "Initialising..."
 
 injected_value=0.5
-
+a = run88_data.txt
 
 def chi_p_1():
     data = []
-    g = open('run88_data.txt', 'r')
+    g = open('a', 'r')
     for line in g:
         data.append([float(x) for x in line.split()])
     saved_chi_p_1 = [x[52] for x in data ]
