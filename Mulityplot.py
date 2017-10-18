@@ -17,8 +17,8 @@ def chi_p_1():
     saved_chi_p_1 = [x[52] for x in data ]
     upper_90_1=np.percentile(saved_chi_p_1, 95)
     mean_val_1=np.average(saved_chi_p_1)
-    chi_p_1_MPE = ((mean_val_1 - injected_value)% injected_value)
-    chi_p_1_90PE = ((upper_90_1 - injected_value)% injected_value)
+    chi_p_1_MPE = ((mean_val_1 - injected_value)% injected_value) * 100
+    chi_p_1_90PE = ((upper_90_1 - injected_value)% injected_value) * 100
     return chi_p_1_MPE,chi_p_1_90PE
 chi_p_file1 = chi_p_1 ()
 print(chi_p_file1)
