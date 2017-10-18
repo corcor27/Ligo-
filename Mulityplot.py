@@ -52,7 +52,26 @@ def chi_p_2_90PE():
     PE_2 = (abs(upper_90_2 - injected_value) / injected_value) * 100
     return PE_2
 
+def chi_p_3_MPE():
+    data = []
+    f = open('run90_data.txt', 'r')
+    for line in f:
+        data.append([float(x) for x in line.split()])
+    saved_chi_p_2 = [x[52] for x in data ]
+    mean_val_2=np.average(saved_chi_p_2)
+    MPE_2 = (abs(mean_val_2 - injected_value) / injected_value) * 100
+    return MPE_2
 
+def chi_p_2_90PE():
+    data = []
+    f = open('run89_data.txt', 'r')
+    for line in f:
+        data.append([float(x) for x in line.split()])
+    saved_chi_p_2 = [x[52] for x in data ]
+    upper_90_2=np.percentile(saved_chi_p_2, 95)
+    mean_val_2=np.average(saved_chi_p_2)
+    PE_2 = (abs(upper_90_2 - injected_value) / injected_value) * 100
+    return PE_2
 
 run1MPE = chi_p_1_MPE()
 run1PE = chi_p_1_90PE()
