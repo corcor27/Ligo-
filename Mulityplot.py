@@ -6,24 +6,22 @@ import sys
 
 print "Initialising..."
 
-
-def chi_p_1()
-
+injected_value=0.5
 
 
-data = []
+def chi_p_1():
+    data = []
+    g = open('run88_data.txt', 'r')
+    for line in g:
+        data.append([float(x) for x in line.split()])
+    saved_chi_p_1 = [x[52] for x in data ]
+    upper_90_1=np.percentile(saved_chi_p_1, 95)
+    mean_val_1=np.average(saved_chi_p_1)
+    chi_p_1_MPE = %((mean_val_1 - injected_value)/ injected_value)
+    chi_p_1_90PE = %((upper_90_1 - injected_value)/ injected_value)
+    return chi_p_1_MPE,chi_p_1_90PE
+chi_p_file1 = chi_p_1 ()
+print(chi_p_file1)
 
-#m1=24th index
-#m2 = 27th index    
-    
-#print parameters    
-    #loop over all lines the file and add each column to the list as a tuple
+   
 
-for line in g:
-    data.append([float(x) for x in line.split()])
-#add parameters as required
-#    m1_freq= [ x[28] for x in data]
-#    m2_freq =[x[31] for x in data ]
-chi_p = [x[51] for x in data ]
-#    chi_eff = [x[46] for x in data ]
-#plt.figure(1)
